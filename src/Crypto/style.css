@@ -1,0 +1,23 @@
+.crytpo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.crypto{
+    background-color:dodgerblue;
+    padding: 2rem;
+    text-align: center;
+
+}
+.cart{
+    margin: 3rem;
+    padding: 2rem;
+    border: 1px solid grey;
+}
+.cart-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
