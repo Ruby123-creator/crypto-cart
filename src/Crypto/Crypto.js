@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, {  useState } from "react";
 import "./style.css";
 import Cart from "./Cart";
 export const Crypto = () => {
@@ -48,7 +48,7 @@ export const Crypto = () => {
           ? {
               name: item.name,
               price: item.price,
-              total:item.total,
+              total:item.total+(Number(obj.qty)*Number(item.price)),
               qty: Number(item.qty) + Number(obj.qty),
             }
           : item
@@ -86,6 +86,7 @@ export const Crypto = () => {
                 <input
                   type="text"
                   name=""
+                  value={qty}
                   placeholder="Quantity"
                   onChange={(e) => setQty(e.target.value)}
                   id=""
