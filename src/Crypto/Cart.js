@@ -7,6 +7,7 @@ const Cart = ({cartitem}) => {
         <td>{cartitem.name}</td>
         <td>${cartitem.price}</td>
         <td>{parseFloat(cartitem.qty)}</td>
+        <td>{cartitem.total}</td>
     </tr>
   )
 }
